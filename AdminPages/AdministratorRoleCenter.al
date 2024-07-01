@@ -9,6 +9,15 @@ page 50504 "Admin Role Center"
     {
         area(RoleCenter)
         {
+            group(Group1)
+            {
+                part(Part1; MyPagePart)
+                {
+                    ApplicationArea = All;
+                }
+
+
+            }
 
         }
     }

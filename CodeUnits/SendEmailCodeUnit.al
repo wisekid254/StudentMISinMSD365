@@ -6,7 +6,7 @@ codeunit 50507 "Send Email Codeunit"
     procedure SendEmails(Subject: Text[100]; Body: Text[1000])
     var
         Email: Record "Emails";
-        Student: Record "Student";
+        Student: Record "Student1";
     begin
         if Student.FindSet() then begin
             repeat

@@ -9,15 +9,11 @@ page 50500 "Student Role Center"
         {
             group(Group1)
             {
-                // part(Part1; progressHeadlines)
-                // {
-                //     ApplicationArea = All;
-                // }
+                part(Part1; MyPagePart)
+                {
+                    ApplicationArea = All;
+                }
 
-                // part(Part2; SalesInvoiceCuePage)
-                // {
-                //     Caption = 'Invoices';
-                // }
             }
         }
     }

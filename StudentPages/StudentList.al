@@ -1,7 +1,7 @@
 page 50501 "Student Profile"
 {
     PageType = List;
-    SourceTable = "Student";
+    SourceTable = "Student1";
     // ApplicationArea = All;
 
     layout

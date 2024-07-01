@@ -1,4 +1,4 @@
-table 50501 "Student"
+table 50600 "Student1"
 {
     DataClassification = ToBeClassified;
 

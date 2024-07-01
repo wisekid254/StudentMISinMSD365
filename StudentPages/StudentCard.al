@@ -1,7 +1,7 @@
 page 50502 "Student Card"
 {
     PageType = Card;
-    SourceTable = "Student";
+    SourceTable = "Student1";
     // ApplicationArea = All;
 
     layout
