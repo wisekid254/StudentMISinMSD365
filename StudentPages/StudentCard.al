@@ -10,15 +10,15 @@ page 50502 "Student Card"
         {
             group(Group)
             {
-                field("Student ID"; Rec."Student ID No")
+                field(StudentIDNo; Rec."Student ID No")
                 {
                     ApplicationArea = All;
                 }
-                field("First Name"; Rec."First Name")
+                field(FirstName; Rec."First Name")
                 {
                     ApplicationArea = All;
                 }
-                field("Last Name"; Rec."Last Name")
+                field(LastName; Rec."Last Name")
                 {
                     ApplicationArea = All;
                 }
@@ -26,7 +26,7 @@ page 50502 "Student Card"
                 // {
                 //     ApplicationArea = All;
                 // }
-                field("Email"; Rec."Email")
+                field(Email; Rec."Email")
                 {
                     ApplicationArea = All;
                 }

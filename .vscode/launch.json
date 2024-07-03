@@ -10,7 +10,7 @@
             "serverInstance": "BC200",
             "authentication": "Windows",
             "port": 7049,
-            "startupObjectId": 50504,
+            "startupObjectId": 50500,
             "startupObjectType": "Page",
             "breakOnError": "All",
             "schemaUpdateMode": "ForceSync",

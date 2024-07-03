@@ -35,7 +35,7 @@ page 50504 "Admin Role Center"
                 {
                     Caption = 'Admin Profile Information';
                     ApplicationArea = all;
-                    // RunObject = page "Student Profile";
+                    RunObject = page "Student Profile";
                 }
 
 
@@ -105,47 +105,54 @@ page 50504 "Admin Role Center"
 
         area(Embedding)
         {
-            action(RegisterNewStudent)
+            action(RegisteredStudent)
             {
-                Caption = 'Register New Students';
-                RunObject = Page "Service list";
+                Caption = 'Registered Students';
+                RunObject = report "Student Details";
                 ApplicationArea = All;
 
             }
 
-            action(SendEmailNotifications)
+            action(SentEmails)
             {
-                Caption = 'Email Students';
+                Caption = 'Emails Sent To Students';
                 RunObject = Page "Send Email Dialog";
                 ApplicationArea = All;
             }
 
-            action("Apply Special Exam")
+            action("Requested Special Exams")
             {
-                Caption = 'Apply Special Exam';
+                Caption = 'Active Special Exams';
                 RunObject = Page "Service list";
                 ApplicationArea = All;
 
             }
-            action("Update Student Details")
-            {
-                Caption = 'Update Student Details';
-                RunObject = Page "Service list";
-                ApplicationArea = All;
 
-            }
             action("Attendance Tracking")
             {
                 Caption = 'Attendance Tracking';
-                RunObject = Page "Service list";
+                RunObject = Page "Student Profile";
                 ApplicationArea = All;
 
+            }
+            action(FeeStructure)
+            {
+                Caption = 'Fee Structure';
+                RunObject = page "feeStructure";
+                ApplicationArea = all;
             }
 
 
         }
         area(Creation)
         {
+            action("Update Student Details")
+            {
+                Caption = 'Update Student Details';
+                RunObject = Page "Student Profile";
+                ApplicationArea = All;
+
+            }
             action("Email Students")
             {
 
@@ -201,19 +208,19 @@ page 50504 "Admin Role Center"
             {
                 Caption = 'Attendance Report';
                 Image = "Report";
-                RunObject = Report "Aged Accounts Payable";
+                RunObject = Report "Student Details";
             }
             action("Academic Performance Report")
             {
                 Caption = 'Academic Performance Report';
                 Image = "Report";
-                RunObject = Report "Aged Accounts Payable";
+                RunObject = Report "Student Details";
             }
             action("Student Enrollement Report")
             {
                 Caption = 'Student Enrollement Report';
                 Image = "Report";
-                RunObject = Report "Aged Accounts Payable";
+                RunObject = Report "Student Details";
 
             }
 

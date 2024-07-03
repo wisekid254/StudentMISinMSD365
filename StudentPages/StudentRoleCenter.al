@@ -2,6 +2,8 @@ page 50500 "Student Role Center"
 {
     PageType = RoleCenter;
     Caption = 'Student';
+    // Permissions = tabledata "Student1" = R;
+
 
     layout
     {
@@ -125,6 +127,12 @@ page 50500 "Student Role Center"
                 // RunObject = Page "Sales list";
                 ApplicationArea = All;
             }
+            action(FeeStructure)
+            {
+                Caption = 'Fee Structure';
+                RunObject = report "Fee Structure";
+                ApplicationArea = all;
+            }
 
             action(DownloadExamCard)
             {
@@ -133,13 +141,7 @@ page 50500 "Student Role Center"
                 ApplicationArea = All;
 
             }
-            action("Apply Special Exam")
-            {
-                Caption = 'Apply Special Exam';
-                // RunObject = Page "Service list";
-                ApplicationArea = All;
 
-            }
             action("Change Course")
             {
                 Caption = 'Change Course';
@@ -147,10 +149,10 @@ page 50500 "Student Role Center"
                 ApplicationArea = All;
 
             }
-            action("Submit Assignments")
+            action("Submited Assignments")
             {
-                Caption = 'Submit Assignments';
-                // RunObject = Page "Service list";
+                Caption = 'Submited Assignments';
+                RunObject = report "Assignments";
                 ApplicationArea = All;
 
             }
@@ -170,8 +172,14 @@ page 50500 "Student Role Center"
             {
                 Caption = 'Fees Payments';
                 Image = NewInvoice;
-                RunObject = Page "Sales Analysis View Card";
+                RunObject = Page "feeStructure";
 
+            }
+            action(SubmitAssignments)
+            {
+                Caption = 'Submit Assignments';
+                RunObject = page "Assignments";
+                ApplicationArea = all;
             }
         }
 
@@ -217,19 +225,19 @@ page 50500 "Student Role Center"
             {
                 Caption = 'Attendance Report';
                 Image = "Report";
-                RunObject = Report "Aged Accounts Payable";
+                RunObject = Report "Student Details";
             }
             action("Fees Statement")
             {
                 Caption = 'Fees Statements';
                 Image = "Report";
-                RunObject = Report "Aged Accounts Payable";
+                RunObject = Report "Fee Structure";
             }
             action("Student Report")
             {
                 Caption = 'Student Report';
                 Image = "Report";
-                RunObject = Report "Aged Accounts Payable";
+                RunObject = Report "Student Details";
 
             }
 

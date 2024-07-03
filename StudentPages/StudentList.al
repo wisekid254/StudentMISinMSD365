@@ -10,16 +10,16 @@ page 50501 "Student Profile"
         {
             repeater(Group)
             {
-                field("Student ID No"; Rec."Student ID No")
+                field(StudentIDNo; Rec."Student ID No")
                 {
                 }
-                field("First Name"; Rec."First Name")
+                field(FirstName; Rec."First Name")
                 {
                 }
-                field("Last Name"; Rec."Last Name")
+                field(LastName; Rec."Last Name")
                 {
                 }
-                field("Email"; Rec."Email")
+                field(Email; Rec."Email")
                 {
                 }
             }
